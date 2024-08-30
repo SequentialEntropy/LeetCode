@@ -15,4 +15,7 @@ public:
 
 int main() {
     cout << "Hello LeetCode!\\n";
+    Solution solution;
+    
+    // int answer = solution.func()
 }''' >> $number.cpp
