@@ -1,9 +1,9 @@
-echo "Enter Question Number";
-read number
+echo "Enter Question Number"
+read NUMBER
 
-mkdir $number
+mkdir $NUMBER
 
-cd $number
+cd $NUMBER
 
 echo '''#include <iostream>
 
@@ -25,4 +25,9 @@ int main() {
     // Test case 2
 
     // int answer = solution.func();
-}''' >> $number.cpp
+    // cout << answer << "\\n";
+}''' >> $NUMBER.cpp
+
+echo "g++ -std=c++11 $NUMBER.cpp; ./a.out" >> run.sh
+
+chmod 755 run.sh
