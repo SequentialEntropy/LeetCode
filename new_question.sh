@@ -18,5 +18,11 @@ int main() {
     cout << "Hello LeetCode!\\n";
     Solution solution;
 
-    // int answer = solution.func()
+    // Declare arguments
+
+    // Test case 1
+
+    // Test case 2
+
+    // int answer = solution.func();
 }''' >> $number.cpp
