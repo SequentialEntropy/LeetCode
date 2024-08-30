@@ -22,16 +22,24 @@ public:
 
 int main() {
     cout << "Hello LeetCode!\n";
-
-    vector<int> nums = {3, 2, 2, 3};
-    int val = 3;
-
     Solution solution;
-    
-    int s = solution.removeElement(nums, val);
-    cout << s << '\n';
 
-    for (int i: nums) {
-        cout << i;
+    // Declare arguments
+    vector<int> nums;
+    int val;
+
+    // Test case 1
+    nums = {3, 2, 2, 3};
+    val = 3;
+
+    // Test case 2
+    nums = {0, 1, 2, 2, 3, 0, 4, 2};
+    val = 2;
+
+    int answer = solution.removeElement(nums, val);
+    cout << answer << '\n';
+
+    for (int num: nums) {
+        cout << num << ' ';
     }
 }
